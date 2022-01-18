@@ -48,6 +48,18 @@ overflow: hidden;
     float: right;
     display: block;
   }
+  .circle img {
+          height: 249px;
+          width: 249px;
+          border-radius: 49%;
+          background-color: goldenrod;
+          float: left;
+          margin-left: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 29px;
+        }
 }
 
 @media screen and (max-width: 600px) {
@@ -62,33 +74,22 @@ overflow: hidden;
     display: block;
     text-align: left;
   }
+  .circle img {
+          height: 249px;
+          width: 249px;
+          border-radius: 49%;
+          background-color: goldenrod;
+          float: left;
+          margin-left: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 29px;
+        }
 }
-        .header::after {
-          content: '';
-          display: block;
-          clear: both;
-        }
-        .menu {
-          list-style: none;
-          float: right;
-        }
-        .menu li {
-          line-height: 69px;
-          display: inline-block;
-          flex-wrap: wrap;
-        }
-        .menu li a {
-          display: block;
-          text-decoration: none;
-          color: white;
-          padding: 0px 19px;
-          font-size: 19px;
-          text-transform: uppercase;
-        }
-        .menu li a:hover {
-          color: black;
-          background-color: white;
-        }
+
+
+
         
   
        
@@ -203,7 +204,9 @@ overflow: hidden;
 <body>
   <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <a href="#news">Marks</a>
+  
+  <a href="#news" class="dropbtn" onclick="myFunction2()">Marks</a>
+  
   <a href="TimeTable.html">Time-Table</a>
   <a href="#Teacher">Tuition-Teacher</a>
   <a href="#contact">Contacts</a>
@@ -253,6 +256,7 @@ overflow: hidden;
             x.className = "topnav";
           }
         }
+       
         </script>
     
 </body>
