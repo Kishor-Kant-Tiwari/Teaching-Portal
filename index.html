@@ -313,9 +313,30 @@ overflow: hidden;
           text-align: center;
           padding: 20px;
         }
+        .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
       </style>
 </head>
 <body>
+  
   <div class="icon-bar">
     <a href="https://www.facebook.com/glauniv/" target="_blank"  class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/gla_mathura?lang=en" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
@@ -336,6 +357,10 @@ overflow: hidden;
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong> Please See Daily updated Time Table on Portal and Come to the Tuition on Time</strong>
 </div>
     <div id="container">
         
@@ -376,6 +401,7 @@ overflow: hidden;
           </p>
         </div>
       </div>
+     
       <script>
         function myFunction3(){
           alert ("Session Expired! Marks Not Found");
