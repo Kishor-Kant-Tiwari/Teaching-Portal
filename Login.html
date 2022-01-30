@@ -105,19 +105,7 @@ body {
 .wrapper a:hover {
     color: #039BE5
 }
-.btn1{
-    margin-left: 195px;
-    margin-top: -1px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-style: initial;
-    background-color: rgb(34, 34, 28);
-    text-decoration: none;
-    
-    
-    
 
-}
 
 @media(max-width: 380px) {
     .wrapper {
@@ -133,7 +121,7 @@ body {
         <div class="text-center mt-4 name">STUDENT LOGIN</div>
         <form class="p-3 mt-3" name="myForm" method="post" onsubmit="return validateform()">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div><button class="btn1"><a href="./index.html">Student Portal</a></button> <input type="submit" class="btn" value="Login">
+            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login">
         </form>
       
     </div>
@@ -174,12 +162,7 @@ body {
             return false;
         }
     }
-    function preventBack() {
-    window.history.forward();
     
-  }
-  setTimeout("preventBack()", 0);
-  window.onunload = function () { null };
     
       
 
