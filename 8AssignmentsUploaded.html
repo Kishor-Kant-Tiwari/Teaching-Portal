@@ -66,9 +66,13 @@
         .notuploaded{
             background-color: rgb(248, 71, 71);
         }
+        .log{
+            margin-right: -1200px;
+        }
     </style>
 </head>
 <body>
+    <h2 class="log"><a href="./index.html"><u>Log Out</u></a></h2>
     
    <h2><u>8 Class Assignments Details</u></h2>
    <table>
@@ -264,6 +268,12 @@
 
    </table>
    <script>
+       function preventBack() {
+    window.history.forward();
+    
+  }
+  setTimeout("preventBack()", 0);
+  window.onunload = function () { null };
       function myFunction1(){
           alert("Not Uploaded Yet");
 
