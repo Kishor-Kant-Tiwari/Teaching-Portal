@@ -119,10 +119,58 @@ body {
         <div class="text-center mt-4 name">STUDENT LOGIN</div>
         <form class="p-3 mt-3" name="myForm" onsubmit="return validateform()">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <button class="btn mt-3">Login</button>
+            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" value="register">
         </form>
       
     </div>
+    <script>
+        function validateform(){
+        var name=document.myForm.userName.value;
+        var password=document.myForm.password.value;
+
+        if (name=="raghav123" || password=="Raghav@123"){
+            alert("Welcome Raghav Pathak");
+            return true;
+        }
+        else{
+            alert("Invalid UserID and Password");
+            return false;
+        }
+        if (name=="anshul123" || password=="Anshul@123"){
+            alert("Welcome Anshul Pathak");
+            return true;
+        }
+        else{
+            alert("Invalid UserID and Password");
+            return false;
+        }
+        if (name=="rajesh123" || password=="Rajesh@123"){
+            alert("Welcome Rajesh");
+            return true;
+        }
+        else{
+            alert("Invalid UserID and Password");
+            return false;
+        }
+        if (name=="mradul123" || password=="Mradul@123"){
+            alert("Welcome Mradul Tiwari");
+            return true;
+        }
+        else{
+            alert("Invalid UserID and Password");
+            return false;
+        }
+        if (name=="yuvraj123" || password=="Yuvraj@123"){
+            alert("Welcome Yuvraj Singh Tomar");
+            return true;
+        }
+        else{
+            alert("Invalid UserID and Password");
+            return false;
+        }
+    }
+
+    </script>
     
 </body>
 </html>
