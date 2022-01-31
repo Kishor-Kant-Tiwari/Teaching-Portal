@@ -119,41 +119,50 @@ body {
     <div class="wrapper">
         <div class="logo"> <img src="./logo.png" alt=""> </div>
         <div class="text-center mt-4 name">STUDENT LOGIN</div>
-        <form class="p-3 mt-3" name="myForm" onsubmit="return validateform()">
+        <form class="p-3 mt-3" name="myForm" id="form_id">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login">
+            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login" id="submit" onclick="validate()">
         </form>
       
     </div>
     <script>
-        function validateform(){
-        var name=document.myForm.userName.value;
-        var password=document.myForm.password.value;
+        function validate(){
+            
+           
+        var name = document.getElementById("userName").value;
+        var password = document.getElementById("pwd").value;
 
-        if (name=="raghav123" && password=="Raghav@123"){
-            window.open("./7AssignmentsUploaded.html","_self");
+        if (name == "raghav123" && password == "Raghav@123"){
+            window.open("./7AssignmentsUploaded.html");
             return true;
+            
+            
         }
         
         else if (name=="anshul123" && password=="Anshul@123"){
-            window.open("./7AssignmentsUploaded.html","_self");
+            
+            window.open("./7AssignmentsUploaded.html");
             return true;
         }
         
         else if (name=="rajesh123" && password=="Rajesh@123"){
-            window.open("./7AssignmentsUploaded.html","_self");
+            window.open("./7AssignmentsUploaded.html");
             return true;
         }
         
         else if (name=="mradul123" && password=="Mradul@123"){
-            window.open("./8AssignmentsUploaded.html","_self");
+            window.open("./8AssignmentsUploaded.html");
             return true;
         }
         
         else if (name=="yuvraj123" && password=="Yuvraj@123"){
             window.open("./8AssignmentsUploaded.html");
-        
             return true;
+            
+            
+            
+        
+            
         }
         
         
@@ -162,6 +171,7 @@ body {
             return false;
         }
     }
+
     
     
       
