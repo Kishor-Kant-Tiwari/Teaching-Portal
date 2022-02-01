@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time-Table</title>
+    <title>7 Class Assignments Details</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
+    <script>
+        function preventBack() {
+     window.history.forward();
+     
+   }
+   setTimeout("preventBack()", 0);
+   window.onunload = function () { null };
+       function myFunction1(){
+           alert("Not Uploaded Yet");
+ 
+        }
+    </script> 
     <style>
-        body {
-    background-color: rgb(229, 243, 189);
-    
-    
-    
-    
-}
+        body{
+        background-color: rgb(195, 238, 185);
+      }
         
         table {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 100%;
             flex-wrap: wrap;
+            
 
             
         }
         table, th, td{
-            border: 1px solid black;
+            border: 2px solid black;
             
         }
         h2 {
             text-align: center;
         }
         th{
-            background-color: rgb(204, 240, 146);
+            background-color: rgb(250, 204, 119);
             
         }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        
+
+        
         td, th {
             border: 1px solid #dddddd;
             text-align: center;
@@ -56,58 +72,45 @@
         tr:nth-child(odd){
             background-color: #f3bb9b;
         }
+        .uploaded{
+            background-color: rgb(0, 255, 85);
+        }
+        .notuploaded{
+            background-color: rgb(248, 71, 71);
+        }
+        
     </style>
 </head>
 <body>
     
-   <h2><u>Time-Table</u></h2>
+    
+   <h2><u>Class Notes</u></h2>
+   
    <table>
-       <tr>
-           <th>Class</th>
-           <th>Subject</th>
-           <th>Mode</th>
-           <th>Date</th>
-           <th>Day</th>
-           <th>Time</th>
-           <th>Teacher</th>
-           
-       </tr>
-       <tr>
-        <td>6 Class</td>
-        <td>Mathematics</td>
-        <td>Offline</td>
-        <td>02 Feb 2022</td>
-        <td>Wednesday</td>
-        <td>4 PM</td>
-        <td><b>Kishor Kant Tiwari</b></td>
-        
-    </tr>
-    
-      
-    
-      
+    <tr>
+        <th>Class</th>
+        <th>Chapter Name</th>
+        <th>Notes Desciption</th>
+        <th>Uploaded By</th>
+        <th>Class Notes Link</th>
        
+        
+        
+    </tr>
+    <tr>
+        <td>6 Class</td>
+        <td>Mensuration</td>
+        <td>Perimeter/Area</a></td>
+        <td><b>Kishor Kant Tiwari</b></td>
+        <td><a href="./Class 6 AREA AND Perimeter.pdf">6 Class Notes1</a></td>
+        
+        
+        
+    </tr>
+ 
+
+
+   </table>
     
-    <tr>
-        <td>7 Class</td>
-        <td>Science</td>
-        <td>Offline</td>
-        <td>02 Feb 2022</td>
-        <td>Wednesday</td>
-        <td>4 PM</td>
-        <td><b>Amogh Kant Tiwari</b></td>
-        
-    </tr>
-    <tr>
-        <td>8 Class</td>
-        <td>Science</td>
-        <td>Offline</td>
-        <td>02 Feb 2022</td>
-        <td>Wednesday</td>
-        <td>5 PM</td>
-        <td><b>Amogh Kant Tiwari</b></td>
-        
-    </tr>
-   </table> 
 </body>
 </html>
