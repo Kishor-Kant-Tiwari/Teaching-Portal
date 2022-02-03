@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>8 Class Assignments Details</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
     <script>
@@ -78,6 +81,31 @@
         .notuploaded{
             background-color: rgb(248, 71, 71);
         }
+        .modal-title{
+            text-align: center;
+            
+            
+        }
+        .modal-header{
+            background-color: rgb(88, 88, 86);
+        }
+        .modal-body{
+            background-color: rgb(234, 236, 221);
+        }
+        .btn1{
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+        }
+        h4{
+            color: white;
+        }
+        p{
+            font-size: 15px;
+        }
+        .close{
+            color: rgb(255, 251, 251);
+        }
         
     </style>
 </head>
@@ -85,6 +113,36 @@
     
     
    <h2><u>8 Class Assignments Details</u></h2>
+   <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Instructions</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><strong>Assignment Instructions</strong></h4>
+          </div>
+          <div class="modal-body">
+            <p>1.Please Do it on A4 Paper or Any Other Page</p>
+            <p>2.Don't Cheating From Internet. If this found then student will be responsible for this he/she will be exempted from this home Assignment.</p>
+              <p>3.Do not share the answers with each other . If this found then student will be responsible for this he/she will be exempted from this home Assignment</p>  
+                <p>4.Please Submit Your Assignment within the Last Date</p>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn1 btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
    <table>
     <tr>
         <th>Assignments Number</th>
