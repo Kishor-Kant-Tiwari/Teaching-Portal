@@ -121,6 +121,7 @@ body {
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
             <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login">
         </form>
+        
       
     </div>
     <script>
@@ -144,14 +145,15 @@ body {
         }
         
         else if (name=="mradul123" && password=="Mradul@123"){
-            alert("Welcome Mradul Tiwari");
-            return true;
+            window.open("./Students/Mradul/MradulAssignment.html","_self");
+            return false;
         }
         
         else if (name=="yuvraj123" && password=="Yuvraj@123"){
             alert("Welcome Yuvraj Singh Tomar");
             return true;
         }
+        
         else if (name=="alok123" && password=="Alok@123"){
             alert("Welcome Alok Tiwari");
             return true;
@@ -170,6 +172,10 @@ body {
             return false;
         }
     }
+    if(!!window.performance && window.performance.navigation.type === 2){
+       console.log('Reloading');
+    window.location.reload();
+}
 
     </script>
     
