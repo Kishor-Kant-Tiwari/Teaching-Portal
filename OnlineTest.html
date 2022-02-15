@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Online Test Details</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    
+    <style>
+        body{
+        background-color: rgb(195, 238, 185);
+      }
+        
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            flex-wrap: wrap;
+            
+
+            
+        }
+        table, th, td{
+            border: 2px solid black;
+            
+        }
+        h2 {
+            text-align: center;
+        }
+        th{
+            background-color: rgb(250, 204, 119);
+            
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        
+
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        th:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        td:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        tr:nth-child(odd){
+            background-color: #f3bb9b;
+        }
+        .uploaded{
+            background-color: rgb(0, 255, 85);
+        }
+        .notuploaded{
+            background-color: rgb(248, 71, 71);
+        }
+        .modal-title{
+            text-align: center;
+            
+            
+        }
+        .modal-header{
+            background-color: rgb(88, 88, 86);
+        }
+        .modal-body{
+            background-color: rgb(234, 236, 221);
+        }
+        .btn1{
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        h4{
+            color: white;
+        }
+        p{
+            font-size: 15px;
+        }
+        .close{
+            color: rgb(255, 251, 251);
+        }
+        h3 a{
+            background-color: #f59b66;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    
+   <h2><u>Online Test Details</u></h2>
+   
+   
+   <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Instructions</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><strong><U>Online Test Instructions</U></strong></h4>
+          </div>
+          <div class="modal-body">
+            <p>1. You are Monitored during the online Test so don't cheating from internet otherwise you will be removed from the Online Test.</p>
+            
+            <p>2. Please join the Online Test 5 minutes before the scheduled Test</p>
+            <p>3. The Online Test will be End automatically on the given end time so request you to please join the Test on time and do your best</p>
+            <p>4. Please Preapre for the Online Test before attempt the Test and do your Best.</p>
+            <p><b>All the Best :)</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn1 btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+   
+   <table>
+    <tr>
+        <th>Class</th>
+        <th>Subject</th>
+        <th>Chapter Name</th>
+        <th>Chapter Topics</th>
+        <th>Mode</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Test Duration</th>
+        <th>Taken by</th>
+        <th>Test Link</th>
+        
+        
+    </tr>
+    <tr>
+        <td>6 Class</td>
+        <td>Mathematics</td>
+        <td>Mensuration</td>
+        <td>Perimeter and Area</td>
+        <td>ONLINE</td>
+        <td>06-02-2022</td>
+        <td>11:00 AM</td>
+        <td>11:40 AM</td>
+        <td>40 M</td>
+        <td><b>Kishor Kant Tiwari</b></td>
+        <td onclick="myFunction1()"><u>Test Link</u></td>
+        
+        
+    </tr>
+    <tr>
+        <td>7 Class</td>
+        <td>Mathematics</td>
+        <td>Perimeter and Area</td>
+        <td>Circle,Square,Rectangle,Parallelogram</td>
+        <td>ONLINE</td>
+        <td>06-02-2022</td>
+        <td>11:00 AM</td>
+        <td>11:25 AM</td>
+        <td>25 M</td>
+        <td><b>Kishor Kant Tiwari</b></td>
+        <td onclick="myFunction1()"><u>Test Link</u></td>
+        
+        
+    </tr>
+    
+    
+    
+    
+    
+ 
+
+
+   </table>
+   <script>
+       function myFunction(){
+           alert("Not Start Yet");
+       }
+       function myFunction1(){
+           alert("Sorry! The Test Link Has been Expired");
+       }
+   </script>
+    
+</body>
+</html>

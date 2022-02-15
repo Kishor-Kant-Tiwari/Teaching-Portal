@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
+    <title>Marks Portal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./logo.png" type="image/x-icon">
     
@@ -39,7 +39,6 @@
   background-color: #000;
 }
 
-
 .facebook {
   background: #3B5998;
   color: white;
@@ -64,16 +63,7 @@
   background: #bb0000;
   color: white;
 }
-
-.instagram {
-  background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  color: white;
-}
-       
+        
 @media only screen and (max-width:500px) {
   
   
@@ -145,14 +135,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         }
   
         #banner {
-          background-image: url(./Full.jpg);
+          background-image: url("https://www.goabroad.com/section_cloudinary/gaplabs/image/upload/images2/program_content/slava-bowman-161206-unsplash-1526514774.jpg");
           background-size: cover;
           background-position: center;
         }
   
         #banner h2 {
           margin: 19px 19px;
-          color: #fff;
+          color: rgb(170, 4, 4);
         }
   
        
@@ -263,7 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         
   
         #footer {
-          background-color: rgb(236, 210, 62);
+          background-color: plum;
           height: 139px;
           text-align: center;
         }
@@ -277,11 +267,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         .alert {
   padding: 20px;
   background-color: #f44336;
-  color: white;
-}
-.alert1 {
-  padding: 20px;
-  background-color: #eb6b16;
   color: white;
 }
 
@@ -298,9 +283,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 
 .closebtn:hover {
   color: black;
-}
-#name{
-  margin-left: 100px;
 }
 .topnav {
   overflow: hidden;
@@ -405,71 +387,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
     text-align: left;
   }
 }
+
+
       </style>
 </head>
 <body>
   
-  <div class="icon-bar">
+   <div class="icon-bar">
     <a href="https://www.facebook.com/kishor.tiwari.1055" target="_blank"  class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/Kishorkanttiwa1" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-    
 
     <a href="mailto:tiwarikishorkant@gmail.com" target="_blank" class="google"><i class="fa fa-google"></i></a> 
     <a href="https://in.linkedin.com/in/kishor-kant-tiwari-941377186" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
     <a href="https://www.youtube.com/channel/UCcryiBxhZlugk0fbnZTyYzA" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a> 
   </div>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Dashboard</a>
-    <a href="./marksHome.html">Marks Portal</a>
-    <div class="dropdown">
-      <button class="dropbtn">Class Activities
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./TimeTable.html">Time-Table</a>
-        <a href="https://zoom.us/j/5806144183?pwd=eHRveU85bTNPWmZuZ1k0cmtXaGhNdz09">Online Class</a>
-        <a href="" onclick="myFunction7()">Online Test</a>
-    <a href="./ClassNotes.html">Class Notes</a>
-        
-      </div>
-    </div>
-    
-    <div class="dropdown">
-      <button class="dropbtn">Assignments Section 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./6AssignmentsUploaded.html">6 Class</a>
-        <a href="./7AssignmentsUploaded.html">7 Class</a>
-        <a href="./8AssignmentsUploaded.html">8 Class</a>
-        
-      </div>
-    </div>
-    <a href="./Students/Students.html">Tuition Students</a>    
+    <a href="./index.html" class="active">Student-Portal</a>
+    <a href="./LoginAssignment.html">Assignment Marks</a>
+    <a href="./LoginTest.html">Test Marks</a>
+    <a href="./LoginCa.html">CA Marks</a>
+    <a href="./LoginGd.html">GD Marks</a>
+    <a href="./ExamResult.html">Exam Marks</a>
     
     
     
-    
-  <a href="#Teacher">Tuition-Teacher</a>
+    <a href="#Teacher">Tuition-Teacher</a>
   <a href="#contact">Contacts</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Remember: Please visit Student Portal for Daily Updated Time Table and see your marks on this portal</strong>
+  <strong> Please See your marks on this marks portal</strong>
 </div>
-
-
     <div id="container">
         
        
   
         <div id="banner">
-          <h2>Tuition Portal</h2>
+          <h2>Marks Portal</h2>
         </div>
         <a name="Teacher"></a>
         <div id="Circle-Container">
-          <h1><U>Tuition Teacher</U></h1>
+          <h1>Tuition Teacher</h1>
           <div id="circle">
             <img src="./KK.jpg" id="kk" alt="KISHOR KANT TIWARI">
           </div>
@@ -487,7 +446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         
         
         <a name="contact"></a>
-        <h1><U>Contact</U></h1>
+        <h1>Contact</h1>
         <div id="footer">
           <p>
            
@@ -500,36 +459,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
      
       <script>
         function myFunction3(){
-          alert ("Session Expired! Marks Not Found");
-
-
-        }
-        function myFunction2(){
-          alert ("It will be enabled soon");
+          alert ("Test Marks Not Found!");
 
 
         }
         function myFunction4(){
-          alert ("No Science and Mathematics Class scheduled on 13 Feb 2022 (Sunday)");
+          alert ("CA Marks Not Found!");
 
 
         }
         function myFunction5(){
-          alert ("Not Found Yet ");
+          alert ("GD Marks Not Found!");
+
+
+        }
+        function myFunction2(){
+          alert ("Assignments Marks Not Found!");
 
 
         }
         function myFunction6(){
-          alert ("Assignments Not Found");
+          alert ("Exam marks not found yet!");
 
 
         }
-        function myFunction7(){
-          alert ("No Test Found");
-
-
-        }
-
         function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -576,6 +529,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
 
        
         </script>
