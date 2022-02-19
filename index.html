@@ -450,10 +450,13 @@
   <a href="#contact">Contacts</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
+  
 <div class="alert">
 
   <marquee><strong>Remember: Please visit Student Portal for Daily Updated Time Table and See your Marks on Marks portal</strong></marquee>
 </div>
+<p><b><span id='date-time' style="font-size: 18px; color: #ccc; margin-top: 10px;"></span></b>.</p>
+
 
 
 
@@ -463,6 +466,7 @@
   
         <div id="banner">
           <h2>Tuition Portal</h2>
+          
         </div>
         <a name="Teacher"></a>
         <div id="Circle-Container">
@@ -526,6 +530,10 @@
 
 
         }
+        
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+    
 
         function myFunction() {
   var x = document.getElementById("myTopnav");

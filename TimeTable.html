@@ -72,6 +72,7 @@
 
     <marquee><b>If the Time-Table is Changed due to Some Problem So it will Notified to the Whatsapp Group only So Please check Whatsapp Group Regularly!</b></marquee>
   </div>
+  <p><b><span id='date-time' style="font-size: 18px;"></span></b>.</p>
    <table>
        <tr>
            <th>Class</th>
@@ -122,5 +123,9 @@
         
     </tr>
    </table> 
+   <script>
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+    </script>
 </body>
 </html>

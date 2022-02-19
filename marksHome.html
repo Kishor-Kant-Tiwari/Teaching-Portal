@@ -435,6 +435,7 @@
 <div class="alert">
  <marquee><strong>Please See your Tuition Actitivies Marks on this Marks Portal</strong></marquee>
 </div>
+<p><b><span id='date-time' style="font-size: 18px; color: rgb(46, 41, 41); margin-top: 10px;"></span></b>.</p>
     <div id="container">
         
        
@@ -474,6 +475,8 @@
       </div>
      
       <script>
+        var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
         function myFunction3(){
           alert ("Test Marks Not Found!");
 
