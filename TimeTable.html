@@ -63,6 +63,26 @@
   color: white;
   margin-top: 10px;
 }
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+ 
+#digit_clock_time {
+  font-family: 'Work Sans', sans-serif ;
+  font-weight: bold;
+
+  color: #0b0c0c;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 7px;
+}
+#digit_clock_date {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  color: #0b0c0c;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 0px;
+}
     </style>
 </head>
 <body>
@@ -72,7 +92,8 @@
 
     <marquee><b>If the Time-Table is Changed due to Some Problem So it will Notified to the Whatsapp Group only So Please check Whatsapp Group Regularly!</b></marquee>
   </div>
-  <p><b><span id='date-time' style="font-size: 18px;"></span></b>.</p>
+  <div id="digit_clock_date"></div>
+  <div id="digit_clock_time"></div>
    <table>
        <tr>
            <th>Class</th>
@@ -124,8 +145,42 @@
     </tr>
    </table> 
    <script>
-    var dt = new Date();
-    document.getElementById('date-time').innerHTML=dt;
+    function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  var midday = "AM";
+  midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
+  hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
+  hour = changeTime(hour);
+  min = changeTime(min);
+  sec = changeTime(sec);
+  document.getElementById("digit_clock_time").innerText = hour + " : " + min + " : " + sec + " " + midday; /* adding time to the div */
+ 
+  var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+ 
+  var curWeekDay = days[date.getDay()]; // get day
+  var curDay = date.getDate();  // get date
+  var curMonth = months[date.getMonth()]; // get month
+  var curYear = date.getFullYear(); // get year
+  var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear; // get full date
+  document.getElementById("digit_clock_date").innerHTML = date;
+ 
+  var t = setTimeout(currentTime, 1000); /* setting timer */
+}
+ 
+function changeTime(k) { /* appending 0 before time elements if less than 10 */
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+ 
+currentTime();
     </script>
 </body>
 </html>
