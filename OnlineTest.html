@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  
     <title>Online Test Details</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
     
@@ -14,27 +13,54 @@
         body{
         background-color: rgb(195, 238, 185);
       }
-        
-        table {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            flex-wrap: wrap;
-            
+      .container1{
+            padding: 6px;
+            border-style: solid;
+            background-color: rgb(247, 244, 196);
+            margin-top: 33px;
+        }
+        .container2{
+            padding: 6px;
+            border-style: solid;
+            background-color: rgb(247, 244, 196);
+            margin-top: 33px;
+        }
+        .upcoming{
+            margin-bottom: 15px;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            background-color: rgb(158, 179, 248);
+            padding: 8px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+        }
+        .classname{
+            border-style: solid;
+            background-color: blanchedalmond;
+            font-size: 15px;
+        }
+        .finished{
+            margin-bottom: 15px;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            padding: 8px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            background-color: rgb(0, 255, 85);
+        }
 
-            
+        h3{
+            margin-left: 2px;
+            font-size: 18px;
         }
-        table, th, td{
-            border: 2px solid black;
-            
-        }
-        h2 {
-            text-align: center;
-        }
-        th{
-            background-color: rgb(250, 204, 119);
-            
-        }
+        
+        
         a{
             color: brown;
             text-decoration: none;
@@ -42,34 +68,7 @@
         
 
         
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: center;
-            padding: 8px;
-            cursor: pointer;
-        }
-        th:hover{
-            background-color: #f2f2f2;
-        cursor: pointer;
-            
-        }
-        td:hover{
-            background-color: #f2f2f2;
-        cursor: pointer;
-            
-        }
-        tr:nth-child(even){
-            background-color: #dddddd;
-        }
-        tr:nth-child(odd){
-            background-color: #f3bb9b;
-        }
-        .uploaded{
-            background-color: rgb(0, 255, 85);
-        }
-        .notuploaded{
-            background-color: rgb(248, 71, 71);
-        }
+        
         .modal-title{
             text-align: center;
             
@@ -96,9 +95,38 @@
         .close{
             color: rgb(255, 251, 251);
         }
-        h3 a{
-            background-color: #f59b66;
+        .active{
+          background-color: rgb(247, 185, 109);
+          margin-bottom: 15px;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            padding: 8px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            
         }
+        #digit_clock_time {
+  font-family: 'Work Sans', sans-serif;
+  color: #1d1f1e;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 7px;
+}
+#digit_clock_date {
+  font-family: 'Work Sans', sans-serif;
+  color: #1d1f1e;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 0px;
+}
+.button{
+  margin-top: 27px;
+}
+        
         
         
     </style>
@@ -106,90 +134,81 @@
 <body>
     
     
-   <h2><u>Online Test Details</u></h2>
+   <h2 style="text-align: center;"><u>Online Test Details</u></h2>
+   <div id="digit_clock_date"></div>
+  <div id="digit_clock_time"></div>
+  <div class="button">
+   <button style="background-color: rgb(158, 179, 248);  border-radius: 5px;"><b>Upcoming</b></button> <button style="background-color: rgb(247, 185, 109);  border-radius: 5px;"><b>Active</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px;"><b>Finished</b></button>
+   
+   </div>
    
    
-   <div class="container">
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Instructions</button>
   
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-      
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><strong><U>Online Test Instructions</U></strong></h4>
-          </div>
-          <div class="modal-body">
-            <p>1. You are Monitored during the online Test so don't cheating from internet otherwise you will be removed from the Online Test.</p>
-            
-            <p>2. Please join the Online Test 5 minutes before the scheduled Test</p>
-            <p>3. The Online Test will be End automatically on the given end time so request you to please join the Test on time and do your best</p>
-            <p>4. Please Preapre for the Online Test before attempt the Test and do your Best.</p>
-            <p><b>All the Best :)</b></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn1 btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-        
-      </div>
+  <div class="container1">
+    <div class="classname">
+        <h1 style="text-align: center; font-size: 24px;">8 CLASS</h1>
+
     </div>
+    <h3>Subject Name: Mathematics</h3>
+    <h3>Chapter Name: Mensuration</h3>
+    <h3>Date: 24-02-2022</h3>
+    <h3>Start Time: 8:00 PM</h3>
+    <h3>End Time: 8:15 PM</h3>
+    <H3>Taken By: Kishor Kant Tiwari</H3>
+    <Button class="finished"><b>Finished</b></Button>
+
+</div>
     
+<div class="container2">
+  <div class="classname">
+      <h1 style="text-align: center; font-size: 24px;">7 CLASS</h1>
+
   </div>
-   
-   <table>
-    <tr>
-        <th>Class</th>
-        <th>Subject</th>
-        <th>Chapter Name</th>
-        <th>Chapter Topics</th>
-        <th>Mode</th>
-        <th>Date</th>
-        <th>Start Time</th>
-        <th>End Time</th>
-        <th>Test Duration</th>
-        <th>Taken by</th>
-        <th>Test Link</th>
-        
-        
-    </tr>
-  
-    <tr>
-        <td>8 Class</td>
-        <td>Mathematics</td>
-        <td>Mensuraion</td>
-        <td>Formula and Basic Questions</td>
-        <td>ONLINE</td>
-        <td>24-02-2022</td>
-        <td>08:00 PM</td>
-        <td>08:08 PM</td>
-        <td>08 M</td>
-        <td><b>Kishor Kant Tiwari</b></td>
-        <td onclick="myFunction1()"><u>Test Link</u></td>
-        
-        
-    </tr>
-    
-    
-    
-    
-    
- 
+  <h3>Subject Name: Mathematics</h3>
+  <h3>Chapter Name: Mensuration</h3>
+  <h3>Date: 24-02-2022</h3>
+  <h3>Start Time: 8:00 PM</h3>
+  <h3>End Time: 8:15 PM</h3>
+  <H3>Taken By: Kishor Kant Tiwari</H3>
+  <Button class="finished"><b>Finished</b></Button>
 
+</div>
+<script>function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  var midday = "AM";
+  midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
+  hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
+  hour = changeTime(hour);
+  min = changeTime(min);
+  sec = changeTime(sec);
+  document.getElementById("digit_clock_time").innerText = hour + " : " + min + " : " + sec + " " + midday; /* adding time to the div */
 
-   </table>
-   <script>
-       function myFunction(){
-           alert("Test Not Start Yet");
-       }
-       function myFunction1(){
-           alert("Sorry! The Test Link Has been Expired");
-       }
-   </script>
-    
+  var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  var curWeekDay = days[date.getDay()]; // get day
+  var curDay = date.getDate();  // get date
+  var curMonth = months[date.getMonth()]; // get month
+  var curYear = date.getFullYear(); // get year
+  var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear; // get full date
+  document.getElementById("digit_clock_date").innerHTML = date;
+
+  var t = setTimeout(currentTime, 1000); /* setting timer */
+}
+
+function changeTime(k) { /* appending 0 before time elements if less than 10 */
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime();
+</script>
 </body>
 </html>
