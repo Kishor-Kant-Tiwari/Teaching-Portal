@@ -169,7 +169,7 @@
     <h3>Start Time: 7:00 PM</h3>
     <h3>End Time: 7:25 PM</h3>
     <H3>Taken By: Kishor Kant Tiwari</H3>
-    <Button class="active"><a href="https://quizizz.com/join/pre-game/running/U2FsdGVkX19G67BKkEvcoM%252F5RqMQtfkcZdCw%252B%252FnFO33kr0hV3eDyhZ4njh3AZrpbJd4k0Rfd1ZrsHvl34vYG3w%253D%253D/start" target="_blank"><b>Test Link</b></a></Button>
+    <Button class="finished" onclick="finished()"><b>Test Link</b></Button>
 
 </div>
     
@@ -184,7 +184,7 @@
   <h3>Start Time: 7:30 PM</h3>
   <h3>End Time: 7:55 PM</h3>
   <H3>Taken By: Kishor Kant Tiwari</H3>
-  <Button class="upcoming" onclick="upcoming()"><b>Test Link</b></Button>
+  <Button class="active"><a href="https://quizizz.com/join/pre-game/running/U2FsdGVkX19G67BKkEvcoM%252F5RqMQtfkcZdCw%252B%252FnFO33kr0hV3eDyhZ4njh3AZrpbJd4k0Rfd1ZrsHvl34vYG3w%253D%253D/start" target="_blank"><b>Test Link</b></a></Button>
 
 </div>
 <!--<div class="container3">
@@ -240,6 +240,9 @@ function changeTime(k) { /* appending 0 before time elements if less than 10 */
 currentTime();
 function upcoming(){
   alert("Test not Start Yet!")
+}
+function finished(){
+  alert("Test has Finished!")
 }
 
 </script>
