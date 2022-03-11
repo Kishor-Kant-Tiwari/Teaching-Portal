@@ -82,7 +82,7 @@ body {
     margin-top: 86px;
     width: 100%;
     height: 40px;
-    background-color: #03A9F4;
+    background: linear-gradient(to right, #ff105f,#ffad06);
     color: #fff;
     border-radius: 25px;
     box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
@@ -114,16 +114,20 @@ body {
     </style>
 </head>
 <body>
+    
     <div class="wrapper">
         <div class="logo"> <img src="./logo.png" alt=""> </div>
         <div class="text-center mt-4 name">STUDENT LOGIN</div>
         <form class="p-3 mt-3" name="myForm" onsubmit="return validateform()">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login">
+            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login" style="font-weight: bold; font-size: 16px;">
+            
         </form>
         
       
     </div>
+    <marquee>This Portal is Managed by <b>Mr. Kishor Kant Tiwari</b> Software Developer</marquee>
+    
     <script>
         function validateform(){
         var name=document.myForm.userName.value;
