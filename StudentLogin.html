@@ -79,7 +79,7 @@ body {
 
 .wrapper .btn {
     box-shadow: none;
-    margin-top: 86px;
+    margin-top: 38px;
     width: 100%;
     height: 40px;
     background: linear-gradient(to right, #ff105f,#ffad06);
@@ -87,6 +87,20 @@ body {
     border-radius: 25px;
     box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
     letter-spacing: 1.3px
+    
+
+}
+.wrapper .btn1 {
+    box-shadow: none;
+    margin-top: 40px;
+    width: 48%;
+    height: 28px;
+    background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+    letter-spacing: 0.3px;
+    margin-left: 150px;
     
 
 }
@@ -120,7 +134,9 @@ body {
         <div class="text-center mt-4 name">STUDENT LOGIN</div>
         <form class="p-3 mt-3" name="myForm" onsubmit="return validateform()">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="UserID" autocomplete="off"> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div> <input type="submit" class="btn" value="Login" style="font-weight: bold; font-size: 16px;">
+            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off"> </div>
+            <p class="btn1" style="font-weight: bold; font-size: 16px; text-align: center; cursor: pointer;"><a href="./ResetPassword.html" style="text-decoration: none; color: white;">Forgot Password</a></p>
+             <input type="submit" class="btn" value="Login" style="font-weight: bold; font-size: 16px;">
             
         </form>
         
