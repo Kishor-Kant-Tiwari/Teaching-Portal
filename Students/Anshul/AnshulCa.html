@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>7 Class CA Marks</title>
+  <title>Student CA Marks</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
     
    
@@ -68,10 +68,10 @@
         tr:nth-child(odd){
             background-color: #f3bb9b;
         }
-        .uploaded{
+        .present{
             background-color: rgb(0, 255, 85);
         }
-        .notuploaded{
+        .absent{
             background-color: rgb(248, 71, 71);
         }
         .modal-title{
@@ -100,8 +100,19 @@
         .close{
             color: rgb(255, 251, 251);
         }
-        .absent{
+        .leave{
             background-color: rgb(247, 148, 35);
+        }
+        .container{
+            border-style: solid;
+            background-color: rgb(247, 244, 196);
+            margin-top: 14px;
+            border-radius: 11px;
+            padding: 5px;
+        }
+        .pending{
+            background-color: rgb(243, 214, 182);
+
         }
         
     </style>
@@ -110,133 +121,43 @@
 <body>
     
     
-   <h2><u>Anshul Pathak CA Details</u></h2>
+   <h2 style="font-weight: bold;"><u>Anshul Pathak CA Marks</u></h2>
    <img src="./Anshul Pathak.jpg" width="120px" height="120px">
-   <h3 style="text-align: center; margin-top: 18px;"><u>MATHEMATICS</u></h3>
+   <h3 style="text-align: center; margin-top: 18px; font-weight: bold;"><u>CA Marks</u></h3>
    <button onclick="window.print()" style="margin-top: 0px; margin-left: 15px; border-radius: 6px; font-size: 17px; cursor: pointer; background-color: black; color: white;">Print Result</button>
    
    
    
-   <table>
-    <tr>
-        <th><u>CA Number</u></th>
-        <th><u>Chapter Name</u></th>
-        <th><u>CA Date</u></th>
-        <th><u>Mode of CA</u></th>
-        <th><u>Total Marks</u></th>
-        <th><u>Obtain Marks</u></th>
-        <th><u>Status</u></th>
-        
-        
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Rational Numbers</td>
-        <td>16-04-2022</td>
-        <td>OFFLINE</td>
-        <td><button style="border: 0;" >10</button></td>
-        <td><button style="border: 0;" >05</button></td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
+   
+    <div class="container">
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px;">CA Number: 1</p> 
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px; margin-top: -11px;">Class: 8 CLASS</p> 
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Chapter Name: Rational Number</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Date: 16-04-2022</p><button class="present" style="margin-left: 234px; margin-top: -41px; font-weight: bold; font-size: 19px;">Present</button>
+        <p style="margin-top: -31px; margin-left: 3px; font-weight: bold; font-size: 19px;">Day: Saturday</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Mode: OFFLINE</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Total Marks: <button style="border: 0;" >10</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Obtain Marks: <button style="border: 0;" >05</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px; color: rgb(247, 17, 47);">Taken By: KISHOR KANT TIWARI</p>
+    </div>
+
+    <!--<div class="container">
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px;">GD Number: 2</p> 
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px; margin-top: -11px;">Class: 9 CLASS</p> 
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">GD Topic: Life Without Mobile</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Date: 30-04-2022</p><button class="pending" style="margin-left: 234px; margin-top: -41px; font-weight: bold; font-size: 19px;">Pending</button>
+        <p style="margin-top: -31px; margin-left: 3px; font-weight: bold; font-size: 19px;">Day: Saturday</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Mode: OFFLINE</p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Total Marks: <button style="border: 0;" >10</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Obtain Marks: <button style="border: 0;" >--</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px; color: rgb(247, 17, 47);">Taken By: KISHOR KANT TIWARI</p>
+    </div>-->
     
-    <!--<tr>
-        <td>2</td>
-        <td>Fractions and Decimals</td>
-        <td>08-10-2021</td>
-        <td>ONLINE</td>
-        <td>10</td>
-        <td>08</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Data Handling</td>
-        <td>08-10-2021</td>
-        <td>ONLINE</td>
-        <td>10</td>
-        <td>09</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Simple Equations</td>
-        <td>01-01-2022</td>
-        <td>OFFLINE</td>
-        <td>10</td>
-        <td>08</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Lines and Angles</td>
-        <td>10-02-2022</td>
-        <td>OFFLINE</td>
-        <td>10</td>
-        <td>09</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
+    
     
 
-    <tr>
-        <td>9</td>
-        <td>Rational Number</td>
-        <td>10-02-2022</td>
-        <td>OFFLINE</td>
-        <td>10</td>
-        <td>09</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
-    
-    <tr>
-        <td>11</td>
-        <td>Perimeter and Area</td>
-        <td>23-02-2022</td>
-        <td>OFFLINE</td>
-        <td>10</td>
-        <td>02</td>
-        <td class="uploaded">CHECKED</td>
-        
-        
-    </tr>
-    
-    <tr>
-     <td>12</td>
-     <td>Algebraic Expressions</td>
-     <td>10-02-2022</td>
-     <td>OFFLINE</td>
-     <td>10</td>
-     <td>09</td>
-     <td class="uploaded">CHECKED</td>
 
-     
-     
- </tr>
- <tr>
-    <td>13</td>
-    <td>Exponents and Powers</td>
-    <td>28-02-2022</td>
-    <td>ONLINE</td>
-    <td>10</td>
-    <td>07</td>
-    <td class="uploaded">CHECKED</td>
-    
-    
-</tr>-->
-
-
-   </table>
+  
    
     
   
