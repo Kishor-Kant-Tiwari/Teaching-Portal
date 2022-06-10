@@ -163,12 +163,15 @@ body {
         function validateform(){
         var name=document.myForm.userName.value;
         var password=document.myForm.password.value;
+        
+        
 
         if (name=="rAGHAV'567" && password=="@rAGHAV#KIT"){
             //alert("You are now Blocked! Please Contact to Admin.");
             window.open("./Students/Raghav/RaghavDashboard.html","_self");
             return false;
         }
+        
         
         else if (name=="anshul123" && password=="ANSH121355"){
             //alert("You are now Blocked! Please Contact to Admin.");
@@ -179,6 +182,12 @@ body {
         else if (name=="Dhangar raj" && password=="281122"){
             //alert("You are now Blocked! Please Contact to Admin.");
             window.open("./Students/Rajesh/RajeshDashboard.html","_self");
+            return false;
+        }
+        else if (name=="I m Ayush" && password=="456789"){
+            //alert("You are now Blocked! Please Contact to Admin.");
+            alert("Hello Ayush! Welcome to Student Portal your account is in Progress");
+            //window.open("./Students/Radha/RadhaDashboard.html","_self");
             return false;
         }
         
@@ -214,6 +223,7 @@ body {
             window.open("./Students/Radha/RadhaDashboard.html","_self");
             return false;
         }
+        
         
         else{
             alert("Invalid UserID and Password");
