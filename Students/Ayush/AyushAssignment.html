@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>8 Class Assignments Marks</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    
+   
+    
+    <style>
+        body{
+            background-image: url(https://media.istockphoto.com/photos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-picture-id1174989482?b=1&k=20&m=1174989482&s=170667a&w=0&h=ld7ukW9KTzUlJLc6c37C2xs5ESYP2wLyjxsEVCumn2s=);
+        background-repeat: no-repeat;
+        background-size: 1800px 1800px;
+      }
+        
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            flex-wrap: wrap;
+            
+
+            
+        }
+        table, th, td{
+            border: 2px solid black;
+            
+        }
+        h2 {
+            text-align: center;
+        }
+        th{
+            background-color: rgb(250, 204, 119);
+            
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        
+
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        th:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        td:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        tr:nth-child(odd){
+            background-color: #f3bb9b;
+        }
+        .uploaded{
+            background-color: rgb(0, 255, 85);
+        }
+        .notuploaded{
+            background-color: rgb(248, 71, 71);
+        }
+        .modal-title{
+            text-align: center;
+            
+            
+        }
+        .modal-header{
+            background-color: rgb(88, 88, 86);
+        }
+        .modal-body{
+            background-color: rgb(234, 236, 221);
+        }
+        .btn1{
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        h4{
+            color: white;
+        }
+        p{
+            font-size: 15px;
+        }
+        .close{
+            color: rgb(255, 251, 251);
+        }
+        .absent{
+            background-color: rgb(247, 148, 35);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    
+   <h2><u>Ayush Kumar Assignments Details</u></h2>
+   <img src="./Ayush Kumar.jpeg" width="120px" height="120px">
+   <h3 style="text-align: center; margin-top: 18px;"><u>MATHEMATICS</u></h3>
+   <button onclick="window.print()" style="margin-top: 0px; margin-left: 15px; border-radius: 6px; font-size: 17px; cursor: pointer; background-color: black; color: white;">Print Result</button>
+   
+   
+   
+   <table>
+    <tr>
+        <th><u>Assignments Number</u></th>
+        <th><u>Chapter Name</u></th>
+        <th><u>Assign Date</u></th>
+        <th><u>Last Date</u></th>
+        <th><u>Mode of Submission</u></th>
+        <th><u>Total Marks</u></th>
+        <th><u>Obtain Marks</u></th>
+        <th><u>Status</u></th>
+        
+        
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rational Number</td>
+        <td>18-04-2022</td>
+        <td>18-04-2022</td>
+        <td>OFFLINE</td>
+        <td><button style="border: 0;" >20</button></td>
+        <td><button style="border: 0;" >--</button></td>
+        <td class="notuploaded">UNCHECKED</td>
+        
+        
+    </tr>
+    
+    <!--<tr>
+        <td>2</td>
+        <td>Fractions and Decimals</td>
+        <td>01-10-2021</td>
+        <td>08-10-2021</td>
+        <td>ONLINE</td>
+        <td>20</td>
+        <td>11</td>
+        <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Data Handling</td>
+        <td>01-10-2021</td>
+        <td>08-10-2021</td>
+        <td>ONLINE</td>
+        <td>20</td>
+        <td>08</td>
+        <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Simple Equations</td>
+        <td>29-12-2021</td>
+        <td>01-01-2022</td>
+        <td>ONLINE</td>
+        <td>20</td>
+        <td>16</td>
+        <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Lines and Angles</td>
+        <td>25-01-2022</td>
+        <td>10-02-2022</td>
+        <td>OFFLINE</td>
+        <td>20</td>
+        <td>08</td>
+        <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+ 
+
+    <tr>
+        <td>9</td>
+        <td>Rational Number</td>
+        <td>25-01-2022</td>
+        <td>10-02-2022</td>
+        <td>OFFLINE</td>
+        <td>20</td>
+        <td>14</td>
+        <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+    
+    <tr>
+        <td>11</td>
+        <td>Perimeter and Area</td>
+        <td>27-02-2022</td>
+        <td>27-02-2022</td>
+        <td>OFFLINE</td>
+        <td>20</td>
+    <td>06</td>
+    <td class="uploaded">CHECKED</td>
+        
+        
+    </tr>
+    
+    <tr>
+     <td>12</td>
+     <td>Algebraic Expressions</td>
+     <td>25-01-2022</td>
+     <td>10-02-2022</td>
+     <td>OFFLINE</td>
+     <td>30</td>
+    <td>16</td>
+        <td class="uploaded">CHECKED</td>
+
+     
+     
+ </tr>
+ <tr>
+    <td>13</td>
+    <td>Exponents and Powers</td>
+    <td>28-02-2022</td>
+    <td>28-02-2022</td>
+    <td>ONLINE</td>
+    <td>20</td>
+    <td>10</td>
+    <td class="uploaded">CHECKED</td>
+    
+    
+</tr>-->
+
+
+
+
+
+   </table>
+   
+    
+  
+</body>
+</html>
