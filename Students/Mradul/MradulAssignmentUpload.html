@@ -82,6 +82,7 @@
         }
         .notuploaded{
             background-color: rgb(248, 71, 71);
+            color: white;
         }
         .modal-title{
             text-align: center;
@@ -108,6 +109,9 @@
         }
         .close{
             color: rgb(255, 251, 251);
+        }
+        a{
+            font-weight: bold;
         }
         
     </style>
@@ -164,7 +168,7 @@
     <tr>
         <td>1</td>
         <td>Number System</td>
-        <td><a href="./Assignment/Assignment1 9  Class.pdf" target="_blank"><U>Assignment-1</U></a></td>
+        <td><a href="/9 Class Assignments/Assignment1 9  Class.pdf" target="_blank"><U>Assignment-1</U></a></td>
         <td>19-04-2022</td>
         <td>23-04-2022</td>
         <td>OFFLINE</td>
@@ -176,11 +180,11 @@
     <tr>
         <td>2</td>
         <td>Polynomials</td>
-        <td><a href="" onclick="notuploading()"><U>Assignment-2</U></a></td>
-        <td>--</td>
-        <td>--</td>
+        <td><a href="" onclick="AlreadyTaken()"><U>Assignment-2</U></a></td>
+        <td>07-06-2022</td>
+        <td>21-06-2022</td>
         <td>OFFLINE</td>
-        <td class="notuploaded">NOT UPLOADED</td>
+        <td class="uploaded">UPLOADED</td>
         
         
     </tr>
@@ -335,6 +339,9 @@
    <script>
        function notuploading(){
            alert("Assignment Not Uploaded Yet");
+       }
+       function AlreadyTaken(){
+        alert("Assignment Already Taken!");
        }
    </script>
   
