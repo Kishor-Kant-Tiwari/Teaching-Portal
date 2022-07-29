@@ -79,7 +79,7 @@ body {
     
 }
 
-.wrapper .btn {
+/*.wrapper .btn {
     box-shadow: none;
     margin-top: 38px;
     width: 100%;
@@ -92,38 +92,49 @@ body {
     cursor: pointer;
     
 
+}*/
+.wrapper .btn {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #fff;
+                cursor: pointer;
+    margin-left: 5px
 }
 .wrapper .btn1 {
-    box-shadow: none;
-    margin-top: 40px;
-    width: 48%;
-    height: 28px;
-    background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
-    color: #fff;
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
     letter-spacing: 0.3px;
     margin-left: 150px;
+    padding: -0.3em 1.7em;
+    color: #090909;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #fff;
+                cursor: pointer;
     
 
 }
 
 .wrapper .btn:hover {
-    background-color: #039BE5
+    box-shadow: -6px -6px 12px #c5c5c5,
+                6px 6px 12px #fff;
+}
+.wrapper .btn1:hover {
+    box-shadow: -6px -6px 12px #c5c5c5,
+                6px 6px 12px #fff;
 }
 
-.wrapper a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: #03A9F4
-}
 
-.wrapper a:hover {
-    color: #039BE5
-}
-.btn:hover{
-    animation: pulsate 100s ease-in-out;
-}
+
+
 @keyframes pulsate {
     0%{
         box-shadow: 
@@ -150,7 +161,7 @@ body {
         <form class="p-3 mt-3" name="myForm" onsubmit="return validateform()">
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="Enter Your UserID" autocomplete="off" required> </div>
             <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Enter Your Password" autocomplete="off" required></div>
-            <p class="btn1" style="font-weight: bold; font-size: 16px; text-align: center; cursor: pointer;"><a href="./ResetPassword.html" style="text-decoration: none; color: white;">Forgot Password</a></p>
+            <p class="btn1" style=" text-align: center; cursor: pointer;"><a href="./ResetPassword.html" style="text-decoration: none;">Forgot Password</a></p>
              <input type="submit" class="btn" value="Login" style="font-weight: bold; font-size: 16px;">
             
         </form>
