@@ -69,12 +69,7 @@
         tr:nth-child(odd){
             background-color: #f3bb9b;
         }
-        .present{
-            background-color: rgb(0, 255, 85);
-        }
-        .absent{
-            background-color: rgb(248, 71, 71);
-        }
+        
         .modal-title{
             text-align: center;
             
@@ -111,7 +106,36 @@
         }
         .pending{
             background-color: rgb(250, 170, 73);
+            border-radius: 7px;
 
+        }
+        .pending:hover{
+            background-color: rgb(253, 143, 8);
+            
+        }
+        .leave{
+            background-color: rgb(233, 181, 119);
+            border-radius: 7px;
+        }
+        .leave:hover{
+            background-color: rgb(234, 155, 60);
+        }
+        .present{
+            background-color: rgb(59, 241, 120);
+            border-radius: 7px;
+        }
+        .absent{
+            background-color: rgb(248, 71, 71);
+            color: white;
+            border-radius: 7px;
+        }
+        .present:hover{
+            background-color: rgb(1, 253, 85);
+          
+        }
+        .absent:hover{
+            background-color: rgb(238, 6, 6);
+            color: white;
         }
         
     </style>
@@ -188,6 +212,7 @@
         <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Status: <button class="pending" style="font-weight: bold; font-size: 15px;">Pending</button></p>
         <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px; color: rgb(247, 17, 47);">Taken By: KISHOR KANT TIWARI</p>
     </div>
+    
     
 
     <!--<div class="container">
