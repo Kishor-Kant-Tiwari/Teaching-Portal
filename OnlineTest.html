@@ -171,6 +171,24 @@
           background-color: rgb(128, 224, 210);
           text-decoration: underline; 
         }
+        .expired{
+            margin-bottom: 15px;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            background-color: red; 
+            padding: 7px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            
+        }
+        .expired:hover{
+          background-color: rgb(187, 6, 6);
+          text-decoration: underline; 
+          color: white;
+        }
         
         
         
@@ -184,7 +202,7 @@
   <div id="digit_clock_time"></div>
   <div class="button">
    <!--<button style="background-color: rgb(158, 179, 248);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Upcoming</b></button> <button style="background-color: rgb(247, 185, 109);  border-radius: 5px;font-size: 15px; cursor: pointer;"><b>Active</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>-->
-   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>
+   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>   <button style="background-color: red;  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>Expired</b></button>
    </div>
 
    <div class="container2">
@@ -201,7 +219,7 @@
     <h3>Total Questions: 10</h3>
     <h3>Total Time: 25 Minute</h3>
     <H3 style="color: red;">Taken By: Kishor Kant Tiwari</H3>
-    <Button class="started" onclick="expire()"><b>Test Link</b></Button>
+    <Button class="expired" onclick="expire()"><b>Test Link</b></Button>
   
   </div>
    
@@ -284,7 +302,7 @@ function finished(){
   alert("Test has Finished!")
 }
 function expire(){
-  alert("Link has Expired! Kindly Contact your Teacher");
+  alert("Test Link has Expired! Kindly Contact your Teacher");
 }
 
 </script>
