@@ -139,14 +139,15 @@
         }
         .container1 {
             background-color: #eee;
-    width: 78%;
+    width: 79%;
     border-radius: 15px;
-    margin-left: 85px;
+    margin-left: 84px;
     margin-top: -31px;
-    border-style: solid;
+    border: 1px solid black;
+        height: 20px;
         }
         .container{
-            padding: 7px;
+            padding: 15px;
             border-style: solid;
             background-color: rgb(210 236 255 / 71%);
             margin-top: 33px;
@@ -166,7 +167,13 @@
             font-size: 14px;
             border-radius: 15px;
             width: 100%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+            height: 18px;
         }
+        
+        
         .seventyfivepercentage{
             background-color: rgb(235 176 64);
             color: white;
@@ -175,7 +182,12 @@
             font-size: 14px;
             border-radius: 15px;
             width: 80%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+            height: 18px;
         }
+        
         .seventyfourpercentage{
             background-color: rgb(251 70 70);
             color: white;
@@ -184,8 +196,59 @@
             font-size: 14px;
             border-radius: 15px;
             width: 80%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+            height: 18px;
         }
-        
+        .eightypercentage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -78px;
+            width: 150%;
+            height: 100%;
+            background-image: linear-gradient(332deg, rgb(24 209 86), rgb(23, 255, 101));
+            border-radius: inherit;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: scale 5s infinite;
+        }
+        .seventyfivepercentage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -78px;
+            width: 150%;
+            height: 100%;
+            background-image: linear-gradient(332deg, rgb(235 176 64), rgb(220, 144, 3));
+            border-radius: inherit;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: scale 5s infinite;
+        }
+        .seventyfourpercentage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -78px;
+            width: 150%;
+            height: 100%;
+            background-image: linear-gradient(332deg, rgb(251 70 70), rgb(213, 0, 0));
+            border-radius: inherit;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: scale 5s infinite;
+        }
+        @keyframes scale {
+            50% {
+                transform: scaleX(1);
+            }
+            100%{
+                transform: scaleX(0);
+                transform-origin: right;
+            }
+        }
     </style>
 </head>
 <body>
@@ -199,7 +262,7 @@
 </div>
 </div>
 <div class="button">
-    <button class="held" style="background-color: rgb(255 182 81 / 85%);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 2px;"><b>Held</b></button><b style="font-size: 20px; margin-left: 2px;">:</b><button class="HCount" style="margin-left: 2px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">33</button>    <button class="present" style="background-color: rgb(59, 241, 120);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 2px;"><b>Present</b></button><b style="font-size: 20px; margin-left: 2px;">:</b><button class="PCount" style="margin-left: 2px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">33</button>      <button class="absent" style=" background-color: rgb(248, 71, 71);  border-radius: 5px;font-size: 14px; cursor: pointer; color: white;margin-left: 2px;"><b>Absent</b></button><b style="font-size: 20px; margin-left: 2px;">:</b><button class="ACount" style="margin-left: 2px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">0</button>     <button class="leave" style="background-color: rgb(233, 181, 119);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 2px;"><b>Leave</b></button><b style="font-size: 20px; margin-left: 2px;">:</b><button class="LCount" style="margin-left: 2px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">0</button>
+    <button class="held" style="background-color: rgb(255 182 81 / 85%);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 1px;"><b>Held</b></button><b style="font-size: 20px; margin-left: 1px;">:</b><button class="HCount" style="margin-left: 1px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">38</button>    <button class="present" style="background-color: rgb(59, 241, 120);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 1px;"><b>Present</b></button><b style="font-size: 20px; margin-left: 1px;">:</b><button class="PCount" style="margin-left: 1px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">38</button>      <button class="absent" style=" background-color: rgb(248, 71, 71);  border-radius: 5px;font-size: 14px; cursor: pointer; color: white;margin-left: 1px;"><b>Absent</b></button><b style="font-size: 20px; margin-left: 1px;">:</b><button class="ACount" style="margin-left: 1px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">0</button>     <button class="leave" style="background-color: rgb(233, 181, 119);  border-radius: 5px; font-size: 14px; cursor: pointer;margin-left: 1px;"><b>Leave</b></button><b style="font-size: 20px; margin-left: 1px;">:</b><button class="LCount" style="margin-left: 1px;margin-top: 5px;border-radius: 7px;background-color: rgb(62, 59, 55);color: white;font-weight: bold;">0</button>
     </div>
     <table>
         <tr>
@@ -399,6 +462,36 @@
             <td>8 Class</td>
             <td>08-09-2022</td>
             <td><button class="present">P</button><button class="present" style="margin-left: 4px;">P</button></td> 
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>8 Class</td>
+            <td>10-09-2022</td>
+            <td><button class="present">P</button></td> 
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>8 Class</td>
+            <td>11-09-2022</td>
+            <td><button class="present">P</button></td> 
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>8 Class</td>
+            <td>12-09-2022</td>
+            <td><button class="present">P</button></td> 
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>8 Class</td>
+            <td>13-09-2022</td>
+            <td><button class="present">P</button></td> 
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>8 Class</td>
+            <td>16-09-2022</td>
+            <td><button class="present">P</button></td> 
         </tr>
        </table>
 </body>
