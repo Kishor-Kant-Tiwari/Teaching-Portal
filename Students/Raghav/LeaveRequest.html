@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #d60b0b;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.class:after {
+    content:" *";
+    color: red;
+  }
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    font-size: 14px;
+    margin-top: -18px;
+    margin-left: 18px;
+}
+label{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h2>LEAVE REQUEST</h2>
+
+<div class="class"></div><h3>Mandatory Fields</h3>
+<div class="container">
+  <form name="submit-to-google-sheet" onsubmit="return validateForm()">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname" class="class">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="name" placeholder="Your name.." autocomplete="off" oninvalid="this.setCustomValidity('Please enter your name')" oninput="setCustomValidity('')" required>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="class" class="class">Class</label>
+        </div>
+        <div class="col-75">
+          <select id="class" name="class" autocomplete="off" oninvalid="this.setCustomValidity('Please select your class')" oninput="setCustomValidity('')" required>
+            <option value="selectclass">Select Class</option>
+            <option value="8class">8 Class</option>
+            <option value="9class">9 Class</option>
+          </select>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="leavetype" class="class">Leave Type</label>
+      </div>
+      <div class="col-75">
+        <select id="leavetype" name="leavetype" autocomplete="off" oninvalid="this.setCustomValidity('Please select leave type')" oninput="setCustomValidity('')" required>
+            <option value="leavetype">Select Leave Type</option>
+          <option value="medical">Medical</option>
+          <option value="school">School</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="fother">if you select Other so please write other leave</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fother" name="other" placeholder="Other Leave">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fnumber" class="class">Mobile Number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="fnumber" name="fnumber" placeholder="Your mobile number"  maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="off" oninvalid="this.setCustomValidity('Please enter your mobile number with valid digits')" oninput="setCustomValidity('')" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fdate" class="class">From</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="fdate" name="fdate" placeholder="from date" autocomplete="off" oninvalid="this.setCustomValidity('Please select your date')" oninput="setCustomValidity('')" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="tdate" class="class">To</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="tdate" name="tdate" placeholder="To date" autocomplete="off" oninvalid="this.setCustomValidity('Please select your date')" oninput="setCustomValidity('')" required>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject" class="class">Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Please describe your leave" autocomplete="off" oninvalid="this.setCustomValidity('Please describe your leave')" oninput="setCustomValidity('')" maxlength="30" minlength="25"  required style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwc-ww6uSpOc9dc-m_CxSDgzoNNhfpjTLjATGG6iUsmBkPNT_k3vZMjdK7Uq85E1hp9Sg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  var txt;
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Your Leave Request has been sent to your teacher");
+        alert("Please Check your leave status in the leave section");
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
