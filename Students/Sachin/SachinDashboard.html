@@ -449,11 +449,18 @@
     <a href="#" onclick="leaverequest()">Leave Status</a>    
       </div>
     </div>
-    <a href="./SachinEligibility.html">Eligibility Test</a>
-    <a href="./Attendance.html">Attendance</a>
-    <a href="./SachinAssignmentUpload.html">Assignments</a>
+    <div class="dropdown">
+      <button class="dropbtn">Other Type 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./SachinEligibility.html">Eligibility Test</a>
+        <a href="./Attendance.html">Attendance</a>
+        <a href="./SachinAssignmentUpload.html">Assignments</a>
+        <a href="./StudentFees.html">Fees Details</a>   
+      </div>
+    </div>
     <a href="./SachinFinal.html">Result</a>
-    <a href="./StudentFees.html">Fees Details</a>
     <!--<a href="./Format For Group Discussion.pdf" target="_blank">GD Format</a>-->
     
     
@@ -576,7 +583,9 @@ function myFunction3(){
         function EligibilityTest(){
           alert ("Result Not Found!")
         }
-        
+        function leaverequest(){
+          alert ("No Leave Found")
+        }
         function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
