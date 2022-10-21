@@ -171,6 +171,23 @@
           background-color: rgb(128, 224, 210);
           text-decoration: underline; 
         }
+        .notstarted{
+            margin-bottom: 15px;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            background-color: rgb(243, 113, 19);
+            padding: 7px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            
+        }
+        .notstarted:hover{
+          background-color: rgb(218, 104, 23);
+          text-decoration: underline; 
+        }
         .expired{
             margin-bottom: 15px;
             margin-top: 27px;
@@ -189,7 +206,9 @@
           text-decoration: underline; 
           color: white;
         }
-        
+        a{
+          text-decoration: none;
+        }
         
         
     </style>
@@ -202,7 +221,7 @@
   <div id="digit_clock_time"></div>
   <div class="button">
    <!--<button style="background-color: rgb(158, 179, 248);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Upcoming</b></button> <button style="background-color: rgb(247, 185, 109);  border-radius: 5px;font-size: 15px; cursor: pointer;"><b>Active</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>-->
-   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>   <button style="background-color: red;  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>Expired</b></button>
+   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>   <button style="background-color: rgb(243, 113, 19);  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>Not Started</b></button>
    </div>
 
    <div class="container2">
@@ -214,13 +233,12 @@
     <h3>Type: Common Test</h3>
     <h3>Chapter Name: Reasoning_Verbal_All</h3>
     <h3>Date: 21-10-2022</h3>
-    <h3>Start Time: 07:15 PM</h3>
-    <h3>End Time: 07:35 PM</h3>
+    <h3>Start Time: 08:00 PM</h3>
+    <h3>End Time: 08:20 PM</h3>
     <h3>Total Questions: 10</h3>
     <h3>Total Time: 20 Minute</h3>
     <H3 style="color: red;">Taken By: Kishor Kant Tiwari</H3>
-    <Button class="started"><b><a href="https://quizizz.com/join?gc=224776">Test Link</a></b></Button>
-  
+    <Button class="notstarted" onclick="notstarted()"><b>Test Link</a></b></Button>
   </div>
    
   <!--<div class="container2">
@@ -295,7 +313,7 @@ function changeTime(k) { /* appending 0 before time elements if less than 10 */
 }
 
 currentTime();
-function upcoming(){
+function notstarted(){
   alert("Test not Start Yet!")
 }
 function finished(){
@@ -304,6 +322,7 @@ function finished(){
 function expire(){
   alert("Test Link has Expired! Kindly Contact your Teacher");
 }
+
 
 </script>
 </body>
