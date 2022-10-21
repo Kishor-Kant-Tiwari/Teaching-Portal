@@ -31,7 +31,6 @@
         table {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
-            width: 100%;
             flex-wrap: wrap;   
         }
         table{
@@ -147,87 +146,6 @@
             font-weight: bold;
             margin-top: -1px;
         }
-        .eightypercentage {
-            background-color: rgb(24 209 86);
-            color: white;
-            padding: 1%;
-            text-align: right;
-            font-size: 14px;
-            border-radius: 15px;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid black;
-            height: 18px;
-        }
-        
-        
-        .seventyfivepercentage{
-            background-color: rgb(235 176 64);
-            color: white;
-            padding: 1%;
-            text-align: right;
-            font-size: 14px;
-            border-radius: 15px;
-            width: 80%;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid black;
-            height: 18px;
-        }
-        
-        .seventyfourpercentage{
-            background-color: rgb(251 70 70);
-            color: white;
-            padding: 1%;
-            text-align: right;
-            font-size: 14px;
-            border-radius: 15px;
-            width: 80%;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid black;
-            height: 18px;
-        }
-        .eightypercentage::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -78px;
-            width: 150%;
-            height: 100%;
-            background-image: linear-gradient(332deg, rgb(24 209 86), rgb(23, 255, 101));
-            border-radius: inherit;
-            transform: scaleX(0);
-            transform-origin: left;
-            animation: scale 5s infinite;
-        }
-        .seventyfivepercentage::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -78px;
-            width: 150%;
-            height: 100%;
-            background-image: linear-gradient(332deg, rgb(235 176 64), rgb(220, 144, 3));
-            border-radius: inherit;
-            transform: scaleX(0);
-            transform-origin: left;
-            animation: scale 5s infinite;
-        }
-        .seventyfourpercentage::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -78px;
-            width: 150%;
-            height: 100%;
-            background-image: linear-gradient(332deg, rgb(251 70 70), rgb(213, 0, 0));
-            border-radius: inherit;
-            transform: scaleX(0);
-            transform-origin: left;
-            animation: scale 5s infinite;
-        }
         @keyframes scale {
             50% {
                 transform: scaleX(1);
@@ -246,7 +164,7 @@
    <h2><u><b>All Test Marks</b></u></h2>
 </div>
 </div>
-    <table>
+    <table style="width: 100%;">
         <tr>
             <th>#</th>
             <th>Name</th>
@@ -262,8 +180,8 @@
             <td>9 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>12</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>2</td>
@@ -271,8 +189,8 @@
             <td>9 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>10</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>3</td>
@@ -280,8 +198,8 @@
             <td>9 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>00</td>
+            <td class="absent">Absent</td> 
         </tr>
         <tr>
             <td>4</td>
@@ -289,8 +207,8 @@
             <td>9 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>04</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>5</td>
@@ -298,8 +216,8 @@
             <td>8 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>12</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>6</td>
@@ -307,8 +225,8 @@
             <td>8 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>12</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>7</td>
@@ -316,8 +234,8 @@
             <td>8 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>18</td>
+            <td class="present">Present</td> 
         </tr>
         <tr>
             <td>8</td>
@@ -325,8 +243,8 @@
             <td>8 Class</td>
             <td>21-10-2022</td>
             <td>20</td>
-            <td>--</td>
-            <td class="pending">Pending</td> 
+            <td>00</td>
+            <td class="absent">Absent</td> 
         </tr>
         
        </table>
