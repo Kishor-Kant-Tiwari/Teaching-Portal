@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Student Test Marks</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    
+   
+    
+    <style>
+        body{
+            background-image: url(https://media.istockphoto.com/photos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-picture-id1174989482?b=1&k=20&m=1174989482&s=170667a&w=0&h=ld7ukW9KTzUlJLc6c37C2xs5ESYP2wLyjxsEVCumn2s=);
+        background-repeat: no-repeat;
+        background-size: 1800px 1800px;
+        background-size: cover;
+      }
+        
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            flex-wrap: wrap;
+            
+
+            
+        }
+        table, th, td{
+            border: 2px solid black;
+            
+        }
+        h2 {
+            text-align: center;
+        }
+        th{
+            background-color: rgb(250, 204, 119);
+            
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        
+
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        th:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        td:hover{
+            background-color: #f2f2f2;
+        cursor: pointer;
+            
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        tr:nth-child(odd){
+            background-color: #f3bb9b;
+        }
+        
+        .modal-title{
+            text-align: center;
+            
+            
+        }
+        .modal-header{
+            background-color: rgb(88, 88, 86);
+        }
+        .modal-body{
+            background-color: rgb(234, 236, 221);
+        }
+        .btn1{
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        h4{
+            color: white;
+        }
+        p{
+            font-size: 15px;
+        }
+        .close{
+            color: rgb(255, 251, 251);
+        }
+        
+        .container{
+            border-style: solid;
+            background-color: rgb(247, 244, 196);
+            margin-top: 14px;
+            border-radius: 11px;
+            padding: 5px;
+        }
+        .pending{
+            background-color: rgb(250, 170, 73);
+            border-radius: 7px;
+
+        }
+        .pending:hover{
+            background-color: rgb(253, 143, 8);
+            
+        }
+        .approved{
+            background-color: rgb(59, 241, 120);
+            border-radius: 7px;
+        }
+        .rejected{
+            background-color: rgb(248, 71, 71);
+            color: white;
+            border-radius: 7px;
+        }
+        .approved:hover{
+            background-color: rgb(1, 253, 85);
+          
+        }
+        .rejected:hover{
+            background-color: rgb(238, 6, 6);
+            color: white;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    
+    
+   <h2 style="font-weight: bold;"><u>Sachin Baghel Leave Details</u></h2>
+   <img src="./Sachin Bhagel.jpg" width="120px" height="120px">
+   <h3 style="text-align: center; margin-top: 18px; font-weight: bold;"><u>Leave Request</u></h3>
+   <button onclick="window.print()" style="margin-top: 0px; margin-left: 15px; border-radius: 6px; font-size: 17px; cursor: pointer; background-color: black; color: white;">Print</button>
+   
+   
+   
+   
+    <div class="container">
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px;">Leave Request: <button style="border: 0; font-size: 17px;" >01</button></p> 
+        <p style="margin-left: 3px; font-weight: bold; font-size: 19px; margin-top: -11px;">Class: <button style="border: 0; font-size: 17px;" >9 Class</button></p> 
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Leave Type: <button style="border: 0; font-size: 17px;" >Other</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Other: <button style="border: 0; font-size: 13px;" >I am going to mathura for an urgent piece of work</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">MobileNo.: <button style="border: 0; font-size: 17px;" >8923258456</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Leave From: <button style="border: 0; font-size: 17px;" >21-10-2022</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Leave To: <button style="border: 0; font-size: 17px;" >21-10-2022</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px;">Total Days: <button style="border: 0; font-size: 17px;" >01</button></p>
+        <p style="margin-top: 23px; margin-left: 122px; font-weight: bold; font-size: 19px; text-decoration: underline;">Description:</p> <button style="border: 0; font-size: 17px; font-weight: bold;background-color: rgba(0, 0, 0, 0.778);color: white;border-radius: 6px;" >Today I would not attend the class.I submitted my fees by tomorrowI submitted fees by today but phone pe is not working there was a technical issue at bank</button>
+        <p style="margin-top: 14px; margin-left: 3px; font-weight: bold; font-size: 19px;">Status: <button class="approved" style="font-weight: bold; font-size: 15px;">Approved</button></p>
+        <p style="margin-top: -9px; margin-left: 3px; font-weight: bold; font-size: 19px; color: rgb(247, 17, 47);">Taken By: KISHOR KANT TIWARI</p>
+    </div>
+</body>
+</html>
