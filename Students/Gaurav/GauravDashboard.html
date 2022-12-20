@@ -441,10 +441,10 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Assignment Marks</a>
-    <a href="#">Test Marks</a>
-    <a href="#">CA Marks</a>
-    <a href="#">GD Marks</a>
+        <a href="#" onclick="AssignmentMarks()">Assignment Marks</a>
+    <a href="#" onclick="TestMarks()">Test Marks</a>
+    <a href="#" onclick="CaMarks()">CA Marks</a>
+    <a href="#" onclick="GdMarks()">GD Marks</a>
     <a href="./GauravOnlineTest.html">Online Test Marks</a>
         
       </div>
@@ -464,11 +464,11 @@
       </button>
       <div class="dropdown-content">
         <!--<a href="./Attendance.html">Attendance</a>-->
-        <a href="#">Assignments</a>
-        <a href="#">Fees Details</a>
+        <a href="./GauravAssignmentUpload.html">Assignments</a>
+        <a href="#" onclick="FeeDetails()">Fees Details</a>
       </div>
     </div>
-    <a href="#">Result</a>
+    <a href="#" onclick="Result()">Result</a>
     <a href="#Teacher">Tuition-Teacher</a>
   <a href="#contact">Contacts</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -554,22 +554,32 @@ function changeTime(k) { /* appending 0 before time elements if less than 10 */
 }
  
 currentTime();
-function myFunction3(){
+function TestMarks(){
           alert ("Test Marks Not Found!");
 
 
         }
-        function myFunction4(){
+        function CaMarks(){
           alert ("CA Marks Not Found!");
 
 
         }
-        function myFunction5(){
+        function Result(){
+          alert ("Result Not Found!");
+
+
+        }
+          function FeeDetails(){
+          alert ("Fee Details Not Found!");
+
+
+        }
+        function GdMarks(){
           alert ("GD Marks Not Found!");
 
 
         }
-        function myFunction2(){
+        function AssignmentMarks(){
           alert ("Assignments Marks Not Found!");
 
 
@@ -578,9 +588,6 @@ function myFunction3(){
           alert ("Assignments Not Found!");
 
 
-        }
-        function EligibilityTest(){
-          alert ("Result Not Found!")
         }
         function leaverequest(){
           alert ("No Leave Found")
