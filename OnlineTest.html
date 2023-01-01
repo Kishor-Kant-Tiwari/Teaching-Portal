@@ -188,7 +188,7 @@
           background-color: rgb(218, 104, 23);
           text-decoration: underline; 
         }
-        .expired{
+        .cancelled{
             margin-bottom: 15px;
             margin-top: 27px;
             margin-left: auto;
@@ -201,7 +201,7 @@
             cursor: pointer;
             
         }
-        .expired:hover{
+        .cancelled:hover{
           background-color: rgb(187, 6, 6);
           text-decoration: underline; 
           color: white;
@@ -221,7 +221,7 @@
   <div id="digit_clock_time"></div>
   <div class="button">
    <!--<button style="background-color: rgb(158, 179, 248);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Upcoming</b></button> <button style="background-color: rgb(247, 185, 109);  border-radius: 5px;font-size: 15px; cursor: pointer;"><b>Active</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>-->
-   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>   <button style="background-color: rgb(243, 113, 19);  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>Not Started</b></button>
+   <button style="background-color: rgb(144, 254, 237);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Started</b></button> <button style="background-color: rgb(0, 255, 85);  border-radius: 5px; font-size: 15px; cursor: pointer;"><b>Finished</b></button>   <button style="background-color: rgb(243, 113, 19);  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>Not Started</b></button>   <button style="background-color: red;  border-radius: 5px; font-size: 15px; cursor: pointer; color: white;"><b>cancelled</b></button>
    </div>
 
    <!--<div class="container2">
@@ -255,7 +255,7 @@
   <h3>Total Questions: 15</h3>
   <h3>Total Time: 30 Minute</h3>
   <H3 style="color: red;">Taken By: Kishor Kant Tiwari</H3>
-  <Button class="started" onclick="eightclass()"><a href="./error.html"><b>Test Link</b></a></Button>
+  <Button class="cancelled" onclick="cancelled()"><b>Test Link</b></a></Button>
 
 </div>
 <div class="container3">
@@ -272,7 +272,7 @@
   <h3>Total Questions: 15</h3>
   <h3>Total Time: 30 Minute</h3>
   <H3 style="color: red;">Taken By: Kishor Kant Tiwari</H3>
-  <Button class="started" onclick="nineclass()"><a href="./error.html"><b>Test Link</b></a></Button>
+  <Button class="cancelled" onclick="cancelled()"><b>Test Link</b></a></Button>
 
 </div>
 
@@ -330,6 +330,9 @@ function eightclass(){
 }
 function bothclass(){
   alert("You are redirected to Class Test");
+}
+function cancelled(){
+  alert("Test has cancelled");
 }
 
 window.setTimeout( function() {
