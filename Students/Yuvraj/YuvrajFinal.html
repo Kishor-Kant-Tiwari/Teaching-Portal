@@ -10,8 +10,6 @@
     <title>8 Class Final Marks</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
     
-   
-    
     <style>
         body{
             background-image: url(https://media.istockphoto.com/photos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-picture-id1174989482?b=1&k=20&m=1174989482&s=170667a&w=0&h=ld7ukW9KTzUlJLc6c37C2xs5ESYP2wLyjxsEVCumn2s=);
@@ -47,7 +45,6 @@
 
         
         td, th {
-            border: 1px solid #dddddd;
             text-align: center;
             padding: 8px;
             cursor: pointer;
@@ -64,7 +61,7 @@
             
         }
         tr:nth-child(even){
-            background-color: #dddddd;
+            background-color: #f3bb9b;
         }
         tr:nth-child(odd){
             background-color: #f3bb9b;
@@ -101,10 +98,24 @@
         .close{
             color: rgb(255, 251, 251);
         }
+        TD{
+            font-weight: bold;
+        }
         .pending{
             background-color: rgb(250, 170, 73);
         }
-        
+        .uploaded{
+            background-color: rgb(0, 255, 85);
+        }
+        .notuploaded{
+            background-color: rgb(248, 71, 71);
+        }
+        button{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.707);
+    color: white;
+    font-size: 12px;
+}
     </style>
     
 </head>
@@ -113,11 +124,31 @@
     
    <h2><u><b>Yuvraj Singh Tomar Result</b></u></h2>
    <img src="./Yuvraj.jpg" width="120px" height="120px">
+   <table style="width: 100%;margin-top: 53px;border: 3px solid black;">
+    <tr>
+        <th colspan="7" style="color: white; background-color: #000000ba;font-size: 17px;">STUDENT RANK</th>
+    </tr>
+    <tr>
+        <th style="background-color: blanchedalmond;">Session</th>
+        <th style="background-color: blanchedalmond;">Class</th>
+        <th style="background-color: blanchedalmond;">Rank of Student</th>
+        <th style="background-color: blanchedalmond;">Total Students</th>
+    </tr>
+    <tr>
+        <td>2021-22</td>
+        <td><button>8 Class</button></td>
+        <td><button>2</button></td>
+        <td><button>8</button></td>
+    </tr>
+    <tr>
+        <td>2022-23</td>
+        <td><button>9 Class</button></td>
+        <td><button>--</button></td>
+        <td><button>7</button></td>
+    </tr>
+    </table>
+   
    <h3 style="text-align: center; margin-top: 18px;"><u><b>RESULT 2021-2022</b></u></h3>
-   <button  style="margin-top: 26px; margin-left: 15px; border-radius: 6px; font-size: 17px; cursor: pointer; background-color: black; color: white;"><a href="./YuvrajResult2021-22.pdf" target="_blank" style="text-decoration: none; color: #dddddd;">Download Result</a></button>
-   
-   
-   
    <table>
     <tr>
         <th>Class</u></th>
@@ -147,12 +178,6 @@
         
         
     </tr>
-    
-    
-    
-    
-
-
    </table>
 
    <h3 style="text-align: center; margin-top: 51px;"><u><b>RESULT 2022-2023</b></u></h3>
