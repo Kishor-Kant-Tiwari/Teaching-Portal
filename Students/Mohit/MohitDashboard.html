@@ -433,8 +433,8 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#" onclick="assignmentmarks()">Assignment Marks</a>
-    <a href="#" onclick="offlinetest()">Test Marks</a>
+        <a href="#" onclick="assignmentsmarks()">Assignment Marks</a>
+    <a href="#" onclick="test()">Test Marks</a>
     <a href="#" onclick="ca()">CA Marks</a>
     <a href="#" onclick="gd()">GD Marks</a>
     <a href="#" onclick="onlinetest()">Online Test Marks</a>
@@ -454,8 +454,8 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./MohitAssignmentUpload.html">Assignments</a>
-        <a href="#" onclick="fees()">Fees Details</a>   
+        <a href="#" onclick="assignments()">Assignments</a>
+        <!--<a href="#" onclick="fees()">Fees Details</a>-->   
       </div>
     </div>
     <a href="#" onclick="result()">Result</a>
@@ -548,7 +548,7 @@ function changeTime(k) { /* appending 0 before time elements if less than 10 */
 }
  
 currentTime();
-function offlinetest(){
+function test(){
           alert ("Test Marks Not Found!");
 
 
@@ -563,7 +563,7 @@ function offlinetest(){
 
 
         }
-        function assignmentmarks(){
+        function assignmentsmarks(){
           alert ("Assignments Marks Not Found!");
 
 
@@ -573,22 +573,17 @@ function offlinetest(){
 
 
         }
-        function result(){
-          alert ("Result Not Found!");
-
-
+        function EligibilityTest(){
+          alert ("Result Not Found!")
         }
         function leaverequest(){
           alert ("No Leave Found")
         }
-        function attendance(){
-          alert ("Attendance not Found")
-        }
         function onlinetest(){
-          alert ("No Online Test Found")
+          alert ("Online Test marks not Found")
         }
-        function fees(){
-          alert ("No Fees Details Found")
+        function result(){
+          alert ("Result not found!")
         }
         function myFunction() {
   var x = document.getElementById("myTopnav");
